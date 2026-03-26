@@ -4,12 +4,12 @@
     "details": [
       {
         "appIDs": [
-          "com.foodies.customer.iosrar"
+          "5K779VWRTF.com.foodies.customer.iosrar"
         ],
         "components": [
           {
             "/": "/meals/*",
-            "comment": "Matches any URL with a path that starts with /product/."
+            "comment": "Matches any URL that starts with /meals/."
           }
         ]
       }
