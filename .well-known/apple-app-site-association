@@ -10,6 +10,10 @@
           {
             "/": "/meals/*",
             "comment": "Matches any URL that starts with /meals/."
+          },
+          {
+            "/": "/vendors/*",
+            "comment": "Matches any URL that starts with /vendors/."
           }
         ]
       }

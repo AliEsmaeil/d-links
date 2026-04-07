@@ -197,7 +197,7 @@
             </a>
 
             <!-- Replace ID below with the actual App Store ID once available -->
-            <a href="https://apps.apple.com/app/id6740519283" class="btn btn-apple" id="app-store-btn">
+            <a href="https://apps.apple.com/app/6740519283" class="btn btn-apple" id="app-store-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
                     alt="App Store">
                 <div class="btn-text">
@@ -218,10 +218,10 @@
             let mealId = urlParams.get('meal');
             let restaurantId = urlParams.get('restaurant');
 
-            // Handle path-based links like /meal/ID, /meals/ID, /restaurant/ID, or /restaurants/ID
+            // Handle path-based links like /meals/ID or /restaurants/ID
             if (pathSegments.length >= 2) {
-                if (pathSegments[0] === 'meals' || pathSegments[0] === 'meal') mealId = pathSegments[1];
-                if (pathSegments[0] === 'restaurants' || pathSegments[0] === 'restaurant') restaurantId = pathSegments[1];
+                if (pathSegments[0] === 'meals') mealId = pathSegments[1];
+                if (pathSegments[0] === 'restaurants') restaurantId = pathSegments[1];
             }
 
             console.log('Deep Link Params:', { mealId, restaurantId });
